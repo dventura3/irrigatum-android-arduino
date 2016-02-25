@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="fill_parent"
+ android:layout_height="fill_parent"
+ android:background="@drawable/background"
+ android:orientation="vertical"
+ android:id="@+id/lay_main"  >
+	   
+ 	<TableLayout 
+         android:paddingTop="5dip"
+         android:paddingRight="10dip"
+         android:paddingLeft="10dip"
+         android:layout_height="wrap_content" 
+         android:id="@+id/TableLayout" 
+         android:layout_width="fill_parent" >
+		
+   		<TableRow 
+	        android:layout_height="fill_parent" 
+	        android:id="@+id/TableRow01" 
+	        android:layout_width="fill_parent">	
+		  
+	   		    <Button
+				 android:id="@+id/btn_remove_arduino"
+				 android:layout_width="fill_parent"
+				 android:layout_height="wrap_content"
+				 android:text="Remove"
+				 android:background="@drawable/button_red" 
+	        	 style="@style/ButtonText"
+	        	 android:textSize="20dp"
+	        	 android:layout_gravity="center" />	
+			    
+			    <Button
+				 android:id="@+id/btn_send_arduino"
+				 android:layout_width="fill_parent"
+				 android:layout_height="wrap_content"
+				 android:text="Connect"
+				 android:background="@drawable/button_red" 
+	        	 style="@style/ButtonText"
+	        	 android:textSize="20dp"
+	        	 android:layout_gravity="center" />	
+	        	 
+			    
+			    <Button
+				 android:id="@+id/btn_add_arduino"
+				 android:layout_width="fill_parent"
+				 android:layout_height="wrap_content"
+				 android:text="  Add   "
+				 android:background="@drawable/button_red" 
+	        	 style="@style/ButtonText"
+	        	 android:textSize="20dp"
+	        	 android:layout_gravity="center" />	
+	        	 
+        	 
+        	 </TableRow>    
+	 </TableLayout>	  
+	    
+			
+		<ListView
+			 android:id="@+id/list"
+			 android:layout_width="match_parent"
+			 android:layout_height="match_parent" />
+				    	
+	    
+</LinearLayout>

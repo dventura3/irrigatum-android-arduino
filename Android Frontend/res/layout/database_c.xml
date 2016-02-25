@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:id="@+id/layout_exern"
+    android:background="@drawable/background" >
+	    		
+	    
+	    <Spinner
+		    android:id="@+id/spinner_name_plants"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:prompt="@string/select_name_plants" />
+	    
+	    <LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:id="@+id/layout_to_config" />
+	    
+	    <ListView
+			 android:id="@+id/list"
+			 android:layout_width="match_parent"
+			 android:layout_height="match_parent" />
+	    
+	    
+	    
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<selector xmlns:android="http://schemas.android.com/apk/res/android"> 
+  <item android:state_checked="true" android:state_focused="true" 
+        android:drawable="@drawable/lamp_force_on" /> 
+  <item android:state_checked="true" android:state_focused="false" 
+        android:drawable="@drawable/lamp_force_on" /> 
+
+  <item android:state_checked="false" android:state_focused="true" 
+        android:drawable="@drawable/lamp_force_off" /> 
+  <item android:state_checked="false" android:state_focused="false" 
+        android:drawable="@drawable/lamp_force_off" /> 
+
+  <item android:drawable="@drawable/lamp_force_on" /> 
+</selector>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:background="@drawable/background" >
+	
+    <LinearLayout 
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:padding="20sp"
+	android:layout_gravity="center" >
+    
+        <TextView 
+		        android:text="User Name: " 
+		        android:textAppearance="?android:attr/textAppearanceLarge" 
+		        android:id="@+id/u" 
+		        android:layout_height="wrap_content" 
+		        android:layout_width="wrap_content"
+		        android:paddingTop="10sp" />
+        
+        <EditText 
+            	android:id="@+id/user" 
+		        android:layout_height="fill_parent" 
+		        android:layout_width="fill_parent" 
+            	style="@style/red_edittext"
+            	android:paddingTop="10sp" />
+        
+        <TextView 
+		        android:text="Password: " 
+		        android:textAppearance="?android:attr/textAppearanceLarge" 
+		        android:id="@+id/p" 
+		        android:layout_height="wrap_content" 
+		        android:layout_width="wrap_content"
+		        android:paddingTop="10sp" />
+        
+        <EditText 
+            	android:id="@+id/pwd" 
+		        android:layout_height="fill_parent" 
+		        android:layout_width="fill_parent" 
+            	style="@style/red_edittext"
+            	android:inputType="textPassword"
+            	android:paddingTop="10sp" />
+        
+        
+	    <LinearLayout 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_gravity="left"
+		android:paddingTop="20sp" >
+        
+        <Button 
+        		android:text="Login"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:layout_gravity="center"
+        		android:id="@+id/btn_login" 
+        		android:background="@drawable/button_red" 
+        		style="@style/ButtonText" />
+        
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+</ScrollView>

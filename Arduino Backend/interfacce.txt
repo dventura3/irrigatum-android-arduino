@@ -1,0 +1,40 @@
+Interfacce web per arduino:
+
+<indirizzo>/<servizio>
+
+Servizi:
+### json: resistituisce il json con lo stato di arduino
+{ "temp": -1, "mois": -1, "rad": -1, "pump1": 0, "pump2": 0, "bulb1": 0, "bulb2": 0, "cmdtemp": [ 2 , 3 ], "cmdmois": [ 2 , 4 ], "cmdrad": [ -1 , -1 ] }
+* dove temp, mois, rad sono le variabili dei sensori;
+* pumpN, bulbN è lo stato degli attuatori;
+* cmd<var> sono gli array con i parametri di controllo;
+
+### discovery: restituisce informazioni circa i dispositivi (sensori e atturatori) connessi ad arduino
+{ "senstemp": 0, "sensmois": -1, "sensrad": 2, "attpump1": 0, "attpump2": -1, "attbulb1": 2, "attbulb2": -1 }
+
+-1   --> Dispositivo non connesso/non utilizzato
+<N>  --> Dispositivo utilizzato sulla porta <N> (analogico per sensori, digitale per attuatori)
+
+### get: permette di modificare le variabili interne di Arduino e alla fine restituisce un json aggiornato
+
+temp : parametro per forzare la temperatura del dispositivo;
+mois : parametro per forzare l'umidità del dispositivo
+rad : forza l'irraggiamento del dispositivo
+
+(se si forzano i valori su un dispositivo che viene rilevato come usato, vedi discovery, questi verranno
+subito dopo resettati, rendendo VANA l'operazione... the force is strong in us :D)
+
+cmdtemp & cmdmois : array che permettono di impostare le soglie inferiori e superiori per temperatura e umidità
+NOTA 1: il primo valore DEVE ESSERE MINORE!!
+NOTA 2: gli array vanno espressi nella forma "array=1,2,4$". NON DIMENTICATE il $ FINALE, perché se no l'array non viene letto regolarmente.
+
+cmdrad: permette di impostare i parametri relativi all'irraggiamento:
+cmdrad=<soglia di irraggiamento>,<periodo_temporale_minimo_di_irraggiamento>$
+
+(RICORDA IL DOLLARO :D)
+
+
+NOTE IMPORTANTI:
+Prima di utilizzare l'arduino ricordate di settare correttamente le impostazioni
+di connessione nella variabile globale ip[] e i parametri sui sensori attivi dentro la funzione
+setup()

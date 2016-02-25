@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/layout_single_raw"
+    android:background="@drawable/database_background"
+    android:padding="10sp" >
+
+    <LinearLayout 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:paddingLeft="10dp" >
+	        
+		   <TextView 
+		      android:text="Humidity Value:" 
+		      android:id="@+id/hum" 
+		      android:layout_height="wrap_content" 
+		      android:layout_width="wrap_content"
+		      android:textColor="#ffffff"
+		      android:textSize="26sp" />
+	 
+	</LinearLayout>
+	   
+		     
+    <LinearLayout 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:paddingLeft="10dp" >
+			   <TextView 
+			      android:text="" 
+			      android:id="@+id/h_min" 
+			      android:layout_height="wrap_content" 
+			      android:layout_width="wrap_content"
+			      android:textColor="#ffffff"
+			      android:paddingRight="40dp" />
+			
+			    <TextView 
+			       android:text="" 
+			       android:id="@+id/h_max" 
+			       android:layout_height="wrap_content" 
+			       android:layout_width="wrap_content"
+			       android:textColor="#ffffff" />
+   	</LinearLayout>
+		  
+        
+    <LinearLayout 
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal"
+	android:paddingLeft="10dp" > 
+        
+		    <TextView 
+		      android:text="Temperature Value:" 
+		      android:id="@+id/temp" 
+		      android:layout_height="wrap_content" 
+		      android:layout_width="wrap_content"
+		      android:textColor="#ffffff"
+		      android:textSize="26sp" />
+	   
+	</LinearLayout> 
+  	
+    
+    <LinearLayout 
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal"
+	android:paddingLeft="10dp" > 	
+       	
+	       	<TextView 
+		       android:text="" 
+		       android:id="@+id/t_min" 
+		       android:layout_height="wrap_content" 
+		       android:layout_width="wrap_content"
+		       android:textColor="#ffffff"
+		       android:paddingRight="40dp" />
+	
+		    <TextView 
+		       android:text="" 
+		       android:id="@+id/t_max" 
+		       android:layout_height="wrap_content" 
+		       android:layout_width="wrap_content"
+		       android:textColor="#ffffff" />
+	
+    </LinearLayout>
+    
+    
+   	<LinearLayout 
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal"
+	android:paddingLeft="10dp" >   
+ 	  
+		    <TextView 
+		      android:text="Irradiation Value:" 
+		      android:id="@+id/irrad" 
+		      android:layout_height="wrap_content" 
+		      android:layout_width="wrap_content"
+		      android:textColor="#ffffff"
+		      android:textSize="26sp" />
+	  
+    </LinearLayout>
+    
+	<LinearLayout 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:paddingLeft="10dp" >  
+	    
+		    <TextView 
+		       android:text="Threasold Irradiation: " 
+		       android:id="@+id/thr_irrad" 
+		       android:layout_height="wrap_content" 
+		       android:layout_width="wrap_content"
+		       android:textColor="#ffffff"
+		       android:paddingRight="40dp" />
+	
+		    <TextView 
+		       android:text="Time Irridiation: " 
+		       android:id="@+id/time_irrad" 
+		       android:layout_height="wrap_content" 
+		       android:layout_width="wrap_content"
+		       android:textColor="#ffffff" />
+	   
+	</LinearLayout>
+
+    
+ 	<LinearLayout 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:gravity="center"
+		android:layout_gravity="bottom"
+		android:padding="10dp" >
+    			<Button
+				 android:id="@+id/btn_remove"
+				 android:layout_width="wrap_content"
+				 android:layout_height="wrap_content"
+				 android:text="Remove"
+				 android:background="@drawable/button_red" 
+	        	 style="@style/ButtonText"
+	        	 android:textSize="15dp" />	
+			    
+			    <Button
+				 android:id="@+id/btn_modify"
+				 android:layout_width="wrap_content"
+				 android:layout_height="wrap_content"
+				 android:text="Modify"
+				 android:background="@drawable/button_red" 
+	        	 style="@style/ButtonText"
+	        	 android:textSize="15dp"/>	
+	        	 
+			    
+			    <Button
+				 android:id="@+id/btn_send"
+				 android:layout_width="wrap_content"
+				 android:layout_height="wrap_content"
+				 android:text=" Send " 
+				 android:background="@drawable/button_red" 
+	        	 style="@style/ButtonText"
+	        	 android:textSize="15dp" />	
+	        	 
+	</LinearLayout>
+	
+</LinearLayout>
